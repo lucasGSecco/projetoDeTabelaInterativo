@@ -8,14 +8,17 @@ function adicionarPlayer(){
     class players {
         nome;
         pontos = 0;
+
+
+        constructor(nome, pontos){
+            this.nome = nome
+            this.pontos = pontos
+        }
     }
     
-    var playerT = new players;
+    
+    var playerT = new players(player,2);
 
-    constructor(nome, pontos){
-        this.nome = nome
-        this.pontos = pontos
-    }
     
     playerT.nome = player;
     
