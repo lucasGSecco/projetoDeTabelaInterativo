@@ -1,3 +1,6 @@
+//lista para armazenar os jogadores
+var jogadores = []
+
 function adicionarPlayer(){
     //variavel que pega o nome do jogador novo
     var player = document.querySelector("#player").value;
@@ -17,13 +20,18 @@ function adicionarPlayer(){
     }
     
     
-    var playerT = new players(player,2);
+    var playerT = new players(player,0);
 
     
     playerT.nome = player;
+
+    jogadores.push(playerT);
     
-    console.log(playerT);
+    console.log(jogadores);
     
 }
+
+console.log(jogadores)
+
 
 
