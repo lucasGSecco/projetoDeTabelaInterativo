@@ -17,19 +17,27 @@
 
     <section>
             <div id="funcoes">
-        
-            <input type="text" id="player">
+            <form>
+                <label>Nome do jogador</label>
+                <input type="text" id="player">
 
-            <input type="button" value="adicionar player" class="botao" onclick="adicionarPlayer()">
-
+                <input type="button" value="adicionar player" class="botao" onclick="adicionarPlayer()">
+            </form>
             <input type="button" value="Criar Tabela" class="botao" onclick="criarTabela()">
 
             <input type="button" value="finalizar campeoanto" class="botao" onclick="finalizarCamp()">
 
         </div>
 
-        <div id="Tabela">
-            dasdasd
+        <div id="displayTable">
+           <table border="1" id="tabela">
+                <thead>
+                    <tr>
+                        <td>Jogador</td>
+                        <td>Pontos</td>
+                    </tr>
+                </thead>
+           </table>
 
         </div>
 

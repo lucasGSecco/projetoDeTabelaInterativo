@@ -5,7 +5,9 @@
 }
 
 body{
-    
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
 }
 
 section{
@@ -26,13 +28,14 @@ header{
     justify-content: center;
 }
 
-#tabela{
-    height: 40vh;
+#displayTabela{
+    height: 60vh;
     width: 100%;
-    background-color: black;
+    ;
 }
 
 footer{
     text-align: center;
     justify-content: center ;
+    background-color: green;
 }
