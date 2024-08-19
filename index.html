@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabela para comp de fifinha</title>
+</head>
+
+<body>
+
+        <header> <!--cabeçalho-->
+            <h1>TABELA</h1>
+        </header>
+        
+        <nav> <!--lista não ordenada de outras páginas-->
+            <ul>
+                <li><a href="guerreiro.html">acabou o cao o guerreiro voltou</a></li>
+                <li><a href="mata-mata.html">tabela de mata-mata</a></li>
+                <li><a href="principal.html">principal</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div id="funcoes">
+                <!--formulário para adição de jogadores-->>
+                <form>
+                    <label>Nome do jogador</label>
+                    <input type="text" id="player">
+
+                    <input type="button" value="adicionar player" class="botao" onclick="adicionarPlayer()">
+                    <input type="reset" value="limpar input" class="botao" onclick="limparPlayer">
+                </form>
+                <input type="button" value="Criar Tabela" class="botao" onclick="criarTabela()">
+
+                <input type="button" value="finalizar campeoanto" class="botao" onclick="finalizarCamp()">
+
+            </div>
+        
+            <div id="tabela"> <!--tabela dos jogadores-->
+                <table border="1">
+                    <thead>
+                        <th>Nome</th>
+                        <th>Pontos</th>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        
+        </section>
+
+        <footer> <!--rodapé-->
+            <p>rodapé</p>
+        </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
