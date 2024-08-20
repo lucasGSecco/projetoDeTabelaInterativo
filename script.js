@@ -4,7 +4,7 @@ function adicionarPlayer(){
     //variavel que pega o nome do jogador novo
     var player = document.querySelector("#player").value;
 
-    //verificar se o valor de palyer não é vazio
+    //verificar se o valor de player não é vazio
 
     if(player === ''){
         console.log('coloque um valor válido')
@@ -38,7 +38,7 @@ function adicionarPlayer(){
     console.log(jogadores);
     
 }
-
+///função de limpar o input 
 function limparPlayer(){
   var player = document.querySelector("#player").value;
 
@@ -47,15 +47,16 @@ function limparPlayer(){
 
 console.log(jogadores)
 
+// função inserir os dados na tabela
 function criarTabela(){
     var tbody = document.getElementById('tbody')
 
     tbody.innerText = ''
 
     for(let i = 0; i < jogadores.length; i++){
-      let tr = tbody.insertRow();
+      let tr = tbody.insertRow(); //insert.Row = insere linha na tabela
 
-      let td_nome = tr.insertCell();
+      let td_nome = tr.insertCell();  //insertCell = insere dados na linha
 
       let td_pontos = tr.insertCell();
 
