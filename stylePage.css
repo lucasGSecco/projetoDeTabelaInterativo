@@ -1,9 +1,3 @@
-:root{
-    --cor-creme: #fffdd0;
-    --cor-vermelha: #ff5510;
-    --cor-marrom: #964b00;
-}
-
 body {
     background-color: antiquewhite;
 }
@@ -11,7 +5,7 @@ body {
 header {
     display: grid;
     place-items: center; /* Centraliza o conteúdo */
-    height: 150px;       /* Altura do header */
+    height: 100px;       /* Altura do header */
   }
   
 nav {
@@ -30,31 +24,18 @@ main{
     place-items: center; /* Centraliza o conteúdo */
 }
 
-.form{
-    background-color: #fffdd0;
+div{
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+}
+
+img{
+    height: 400px;
     width: 500px;
-    height: 150px;
-    display: grid;
-    place-items: center; /* Centraliza o conteúdo */
-    border: 2px solid black;
-    border-radius: 15px;
 }
-
-#tabela{
-    background-color: aqua;
-}
-
-tr{
-    text-align: center;
-    vertical-align: middle;
-}
-
 
 footer{
     display: grid;
     place-items: center; /* Centraliza o conteúdo */
 }
-
-
-
-

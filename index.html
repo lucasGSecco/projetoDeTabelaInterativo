@@ -10,46 +10,43 @@
 <body>
 
         <header> <!--cabeçalho-->
-
-            <div class="informacao">
-                <p>Lucas Corporation :)</p>
-            </div>
                 
-            <div>
+            
                 <h1>TABELA</h1>
                 
                 <nav> <!--lista não ordenada de outras páginas-->
-                    <ul>
-                        <li><a href="guerreiro.html">acabou o cao o guerreiro voltou</a></li>
-                        <li><a href="mata-mata.html">tabela de mata-mata</a></li>
-                        <li><a href="principal.html">principal</a></li>
-                    </ul>
+                    
+                        <a href="pag1.html">pag1</a>
+                        <a href="mata-mata.html">tabela</a>
+                        <a href="principal.html">principal</a>
+                    
                 </nav>
-            </div>
+            
 
         </header>
         
         
 
-        <section>
-            <div id="funcoes">
+        <main>
+            <div class="form">
                 <!--formulário para adição de jogadores-->
                 <form>
                     <label>Nome do jogador</label>
                     <input type="text" id="player">
 
                     <input type="button" value="adicionar player" class="botao" onclick="adicionarPlayer()">
-                    <input type="reset" value="limpar input" class="botao" onclick="limparPlayer">
+
+                    <input type="reset" value="limpar input" class="botao" onclick="limparPlayer()">
                 </form>
-                <input type="button" value="Criar Tabela" class="botao" onclick="criarTabela()">
 
-                <input type="button" value="finalizar campeoanto" class="botao" onclick="finalizarCamp()">
 
+                <!--<input type="button" value="finalizar campeoanto" class="botao" onclick="finalizarCamp()">
+            -->
             </div>
         
             <div id="tabela"> <!--tabela dos jogadores-->
                 <table border="1">
-                    <thead>
+                    <thead class = "coluna">
                         <th>Nome</th>
                         <th>Pontos</th>
                     </thead>
@@ -58,8 +55,12 @@
                     </tbody>
                 </table>
             </div>
+
+            <input type="button" value="Apagar último jogador colocado na tabela" onclick="apagar()">
         
-        </section>
+        </main>
+
+
 
         <footer> <!--rodapé-->
             <p>rodapé</p>
